@@ -12,6 +12,8 @@
     const configs = getConfigs();
     console.log(configs);
     //get passwords
+
+    insertPasswords(password);
   }
 
   function getConfigs() {
@@ -24,7 +26,8 @@
     return configs;
   }
 
-  function insertPasswords() {
+  function insertPasswords(password) {
     //insert passwords into text fields
+    document.getElementById("password").value = password;
   }
 })();
