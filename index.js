@@ -8,10 +8,17 @@
     .addEventListener("click", generatePasswords);
 
   function generatePasswords() {
-    console.log("generating...");
     const configs = getConfigs();
-    console.log(configs);
-    //get passwords
+    //use configs to generate passwords
+    const length = configs.length;
+    const use_symbols = configs.use_symbols;
+    const use_uppercase = configs.use_uppercase;
+    const use_lowercase = configs.use_lowercase;
+
+    const lowercase = "abcdefghijklmnopqrstuvwxyz";
+    const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const symbols = "!@#$%^&*()_+{}[]|:;<>?/";
+    const numbers = "0123456789";
 
     insertPasswords(password);
   }
@@ -23,6 +30,7 @@
     configs.symbols = document.getElementById("symbols").checked;
     configs.uppercase = document.getElementById("uppercase").checked;
     configs.lowercase = document.getElementById("lowercase").checked;
+    configs.numbers = document.getElementById("numbers").checked;
     return configs;
   }
 
