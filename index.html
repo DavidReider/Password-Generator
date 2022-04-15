@@ -10,16 +10,26 @@
   <body>
     <h1>Password Generator</h1>
     <div class="container">
-      <label for="length">Length:</label>
-      <input type="number" id="length" min="6" max="128" value="6" />
-      <label for="symbols">Include Symbols:</label>
-      <input type="checkbox" id="symbols" />
-      <label for="lowercase">Include Lowercase Characters:</label>
-      <input type="checkbox" id="lowercase" />
-      <label for="uppercase">Include Uppercase Characters:</label>
-      <input type="checkbox" id="uppercase" />
-      <label for="numbers">Include Numbers:</label>
-      <input type="checkbox" id="numbers" />
+      <div class="input-container">
+        <label for="length">Length:</label>
+        <input type="number" id="length" min="6" max="128" value="6" />
+      </div>
+      <div class="input-container">
+        <label for="symbols">Include Symbols:</label>
+        <input type="checkbox" id="symbols" />
+      </div>
+      <div class="input-container">
+        <label for="lowercase">Include Lowercase Characters:</label>
+        <input type="checkbox" id="lowercase" />
+      </div>
+      <div class="input-container">
+        <label for="uppercase">Include Uppercase Characters:</label>
+        <input type="checkbox" id="uppercase" />
+      </div>
+      <div class="input-container">
+        <label for="numbers">Include Numbers:</label>
+        <input type="checkbox" id="numbers" />
+      </div>
       <button id="generate">Generate</button>
     </div>
 
