@@ -11,14 +11,39 @@
     const configs = getConfigs();
     //use configs to generate passwords
     const length = configs.length;
-    const use_symbols = configs.use_symbols;
-    const use_uppercase = configs.use_uppercase;
-    const use_lowercase = configs.use_lowercase;
+    const use_symbols = configs.symbols;
+    const use_uppercase = configs.uppercase;
+    const use_lowercase = configs.lowercase;
+    const use_numbers = configs.numbers;
 
     const lowercase = "abcdefghijklmnopqrstuvwxyz";
     const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const symbols = "!@#$%^&*()_+{}[]|:;<>?/";
     const numbers = "0123456789";
+
+    let fullChars = "";
+    let password = "";
+
+    if (use_lowercase) {
+      fullChars += lowercase;
+    }
+    if (use_uppercase) {
+      fullChars += uppercase;
+    }
+    if (use_symbols) {
+      fullChars += symbols;
+    }
+    if (use_numbers) {
+      fullChars += numbers;
+    }
+    console.log(fullChars);
+
+    for (let i = 0; i < length; i++) {
+      password += fullChars.charAt(
+        Math.floor(Math.random() * fullChars.length)
+      );
+    }
+    console.log(password);
 
     insertPasswords(password);
   }
