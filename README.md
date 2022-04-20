@@ -5,8 +5,11 @@
 - Output in a friendly input field so it can easily be edited/tweaked <br>
 - Click to Copy ability
 
+![screenshot](password-gen.png)
+
 Practice JavaScript
 
 - Select fields to get user selected options
 - Work with functional programming
 - A basic object
+
