@@ -7,6 +7,16 @@
     .getElementById("generate")
     .addEventListener("click", generatePasswords);
 
+  document.getElementById("copy").addEventListener("click", copyToClipboard);
+
+  function copyToClipboard() {
+    let copyText = document.getElementById("password");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    console.log("copied");
+  }
+
   function generatePasswords() {
     const configs = getConfigs();
     //use configs to generate passwords
