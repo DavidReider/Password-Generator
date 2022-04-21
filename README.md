@@ -5,6 +5,9 @@
 - Output in a friendly input field so it can easily be edited/tweaked <br>
 - Click to Copy ability
 
+
+See a working copy ![password-factory](https://password-factory.netlify.app/)
+
 ![screenshot](password-gen.png)
 
 Practice JavaScript
