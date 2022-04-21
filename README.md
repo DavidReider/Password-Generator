@@ -6,7 +6,7 @@
 - Click to Copy ability
 
 
-See a working copy ![password-factory](https://password-factory.netlify.app/)
+See a working copy [Password Factory](https://password-factory.netlify.app/)
 
 ![screenshot](password-gen.png)
 
